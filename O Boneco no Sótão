@@ -1,0 +1,100 @@
+// O boneco no sotão.
+let decisao, caminho, extensao, extensao2: number;
+
+//Introdução
+alert('O Boneco no Sótão');
+alert('Clara e seus pais moravam em um apartamento na cidade, mas decidiram passar uma temporada na antiga casa da família. Assim que atravessou a porta da frente, ela sentiu um arrepio gelado percorrer sua espinha. Apesar da sensação incômoda, Clara se deitou e tentou dormir...\nÁs três da madrugada, acorda com sons vindos do teto:"tum... tum... tum...".\nAo investigar, descobre que a porta do sótão, antes sempre trancada, está agora entreaberta. Ela se aproxima, sentindo a escuridão do sótão chamá-la...');
+
+//Desenvolvimento
+decisao = Number(prompt('Clara decide investigar desde o início.\n 1.Subir no sótão.\n2.trancar a porta?'));
+
+if(decisao==1){
+    caminho = Number(prompt('Encontra um boneco de pano antigo, com um botão faltando no olho e a boca costurada de forma estranha.\nEle fala com ela — sem mover os lábios.\n 1.Conversar com o boneco.\n2.tentar destruí-lo?'));
+    if(caminho==2){
+        alert('Assustada, ela pega o boneco e o joga na lareira. Ele desaparece. Confusa, Clara escuta um barulho vindo do seu quarto... "tum...".\nCorrendo, sobe para verificar. O boneco está lá, no meio do quarto — agora com os olhos vermelhos.');
+        alert('Clara tentou destruir o boneco sem compreender sua origem maldita, assim despertando a fúria do espírito ali aprisionado.\nEm vingança, a entidade toma para si os corpos de seus pais, distorcendo suas vozes, seus gestos — suas almas.\nA partir daquele momento, ela jamais voltaria a ver os pais de verdade; apenas sombras vazias, disfarçadas de amor, a atormentando noite após noite.');
+    }
+    if(caminho== 1){
+        caminho = Number(prompt(' O boneco diz que precisa de ajuda para “voltar para o mundo dele”.\n1.Esconder o boneco.\n2.Mostrar aos pais?'));
+        if(caminho==2){
+            alert('Seus pais não o veem — acreditam que tudo não passa de fantasia. Cada palavra desacreditada cava um abismo ainda maior ao redor de Clara, afundando-a em um isolamento silencioso.\nCom raiva ela decide confronta-lo...');
+            extensao = Number(prompt('O boneco ameaça machucar seus pais.\n1.Buscar ajuda no porão da avó?\n2.Fugir da casa'));
+            if(extensao==2){
+                alert('A porta da casa desapareceu — Clara está presa, agora sem saída é obrigada a enfrenta-lo.');
+                extensao2=Number(prompt('Clara encontra um livro antigo da avó, no qual é descrito um espírito que se aloja em bonecos para tentar voltar à vida humana. Nele, há um talismã e um ritual de expulsão.\n1Usar o Talismã?\n2.Tenta expulsa-lo.'));
+                if(extensao2==2){
+                    alert('Clara tenta banir o boneco com palavras, mas ele é extremamente forte. Em resposta, apaga sua consciência e toma o controle de seu corpo. Para os pais, Clara nunca acordou naquela noite.');
+                }else{
+                    alert('Clara usa o talismã de proteção da avó para se proteger, ganhando assim mais tempo para destruir o boneco. Ela descobre que o boneco é, na verdade, o espírito de uma criança amaldiçoada pela bisavó. Ao libertá-lo corretamente, o boneco desaparece e a casa volta ao normal. Os pais finalmente acreditam nela quando encontram o diário da bisavó no porão, confirmando tudo.\nApesar de todo o terror, Clara tenta esquecer o ocorrido e retomar sua vida normalmente na cidade, mas nunca mais retorna à antiga casa.');
+                }
+            }
+            if(extensao==1){
+                extensao2=Number(prompt('Clara encontra um livro antigo da avó, no qual é descrito um espírito que se aloja em bonecos para tentar voltar à vida humana. Nele, há um talismã e um ritual de expulsão.\n1Usar o Talismã?\n2.Tenta expulsa-lo.'));
+                if(extensao2==1){
+                    alert('Clara tenta banir o boneco com palavras, ele é muito forte e apaga a consciência dela e toma seu corpo. Para os pais, Clara nunca acordou naquela noite.');
+                }else{
+                    alert('Clara usa o talismã de proteção da avó para se proteger, ganhando assim mais tempo para destruir o boneco. Ela descobre que o boneco é, na verdade, o espírito de uma criança amaldiçoada pela bisavó. Ao libertá-lo corretamente, o boneco desaparece e a casa volta ao normal. Os pais finalmente acreditam nela quando encontram o diário da bisavó no porão, confirmando tudo.\nApesar de todo o terror, Clara tenta esquecer o ocorrido e retomar sua vida normalmente na cidade, mas nunca mais retorna à antiga casa.');
+                }
+            }
+                
+        }
+        if(caminho==1){
+            caminho= Number(prompt('O boneco se aproxima emocionalmente, age como “amigo” e faz um pedido.\n1.Obedecer ao pedido do boneco.\n2.confrontá-lo?'));
+            if(caminho==1){
+                alert('Ele pede para que abra uma "porta escondida" atrás do espelho do banheiro e promete deixá-la em paz caso ela cumpra esse pedido...');
+                alert('Clara abre a porta escondida. Ao girar a maçaneta, um som baixo e macabro ecoa, como se uma corrente estivesse sendo quebrada. A porta se abre, revelando uma sala escura e abafada, onde bonecos de aparência sinistra estão empoleirados em prateleiras. Eles parecem observá-la, seus olhos vazios e penetrantes fixados nela...\nSem perceber, Clara liberta outras entidades devoradores de almas. A partir daí, ela troca de lugar com os bonecos e é transportada para outro plano, onde fica presa em um ciclo, revivendo a mesma noite eternamente.');
+
+            }
+            if(caminho==2){
+                caminho= Number(prompt(' O boneco ameaça machucar seus pais.\n1.Fugir da casa.\n2.buscar ajuda no porão da avó?'));
+                if(caminho==1){
+                    alert('A porta da casa desapareceu — Clara está presa, agora sem saída é obrigada a enfrenta-lo.');
+                    alert('Clara encontra um livro antigo da avó, que conta sobre um espírito que se aloja em bonecos para tentar voltar à vida humana, nele tem um talismã e um ritual de expulsão.');
+                    extensao= Number(prompt('1.Tenta expulsa-lo.\n2.usar o Talismã?'));
+                    if(extensao==2){
+                        alert('Clara usa o talismã de proteção da avó para se proteger, ganhando assim mais tempo para destruir o boneco. Ela descobre que o boneco é, na verdade, o espírito de uma criança amaldiçoada pela bisavó. Ao libertá-lo corretamente, o boneco desaparece e a casa volta ao normal. Os pais finalmente acreditam nela quando encontram o diário da bisavó no porão, confirmando tudo.\nApesar de todo o terror, Clara tenta esquecer o ocorrido e retomar sua vida normalmente na cidade, mas nunca mais retorna à antiga casa.');
+                    }
+                    if(extensao==1){
+                        alert('Clara tenta banir o boneco com palavras, ele é muito forte e apaga a consciência dela e toma seu corpo. Para os pais, Clara nunca acordou naquela noite.');
+                    }
+                }
+                if(caminho==2){
+                    alert('Clara encontra um livro antigo da avó, que conta sobre um espírito que se aloja em bonecos para tentar voltar à vida humana, nele tem um talismã e um ritual de expulsão.');
+                    caminho= Number(prompt('1.Tenta expulsa-lo.\n2.usar o Talismã?'));
+                    if(caminho==1){
+                        alert('Clara tenta banir o boneco com palavras, ele é muito forte e apaga a consciência dela e toma seu corpo. Para os pais, Clara nunca acordou naquela noite.');
+                    }
+                    if(caminho==2){
+                        alert('Clara usa o talismã de proteção da avó para se proteger, ganhando assim mais tempo para destruir o boneco. Ela descobre que o boneco é, na verdade, o espírito de uma criança amaldiçoada pela bisavó. Ao libertá-lo corretamente, o boneco desaparece e a casa volta ao normal. Os pais finalmente acreditam nela quando encontram o diário da bisavó no porão, confirmando tudo.\nApesar de todo o terror, Clara tenta esquecer o ocorrido e retomar sua vida normalmente na cidade, mas nunca mais retorna à antiga casa.');
+                    }
+                }
+            }
+        }
+    }
+}
+else{
+    caminho= Number(prompt('Clara empurra a porta devagar até ela fechar. Ao girar a chave na fechadura, o som para por um instante. Tudo parece calmo demais.\n Ela volta para o quarto e tenta dormir. No dia seguinte Clara começa a ver o boneco pela casa, no reflexo do espelho, dentro do guarda roupa  mesmo com a porta do sótão trancada ele continua a atormenta-la. Até aparecer fisicamente na sua escrivaninha.\n1.Conversar com o boneco.\n2.tentar destruí-lo?'));
+    if(caminho==2){
+        alert('Clara  tenta queimar o  boneco...O boneco desaparece.');
+        alert('tudo fica silencioso,derrepente ela sente um frio na nuca e desmaia, o espirito “entrou” nela, e agora Clara é apenas uma casca. A alma dela foi para o sótão… e está presa no boneco.');
+
+    }
+    if(caminho==1){
+        caminho= Number(prompt('o boneco se aproxima emocionalmente, age como “amigo” e faz uma pedido.\n1.Obedecer às ordens do boneco.\n2. confrontá-lo?'));
+        if(caminho==1){
+            alert('Clara começa a fazer o que o boneco pede,desligar o despertador do pai, esconder objetos da mãe, deixar as portas abertas à noite...');
+            alert('Uma noite, Clara acorda com uma música antiga tocando.\n Ao sair do quarto, ela vê os pais sentados no sofá, imóveis, os olhos abertos, a boca com linhas vermelhas escorrendo. O controle da TV está no chão. Estão mortos há horas.\nO boneco devorou suas almas, quando Clara tenta correr, as portas não existem mais, A casa está fechada como uma caixa, Clara acaba sozinha, em luto e presa, com o boneco como única companhia.');
+        }
+        if(caminho==2){
+            alert('Clara sente que o boneco está ficando mais perigoso.O boneco ameaça machucar seus pais. Ele se comunica com ela constantemente, às vezes ameaçando, às vezes sussurrando como um amigo.Ela toma uma atitude: Subir no sótão.');
+            alert('Clara encontra um livro antigo da avó, que conta sobre um espírito que se aloja em bonecos para tentar voltar à vida humana, nele tem um talismã e um ritual de expulsão.\n');
+            caminho= Number(prompt('1.Tenta expulsa-lo.\n2.usar o Talismã?'));
+            if(caminho==1){
+                        alert('Clara tenta banir o boneco com palavras, ele é muito forte e apaga a consciência dela e toma seu corpo. Para os pais, Clara nunca acordou naquela noite.');
+                    }
+            if(caminho==2){
+                        alert('Clara usa o talismã da avó para proteção, assim ganhando mais tempo para acabar com o boneco, ela descobre que o boneco era o espírito de uma criança amaldiçoada pela bisavó. Ao libertá-lo corretamente, o boneco some e a casa volta ao normal. Os pais finalmente acreditam nela quando encontram o diário da bisavó no porão, confirmando tudo.\nApesar de todo o terror, ela tenta esquecer o ocorrido e volta a viver sua vida normalmente na cidade, nunca mais volta a casa  antiga.');
+                    }
+        }
+    }
+}
